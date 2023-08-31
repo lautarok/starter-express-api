@@ -1,0 +1,19 @@
+doctype html
+html
+  head 
+    title Cameras - Serve webcam video
+    script(src='/static/js/camera.js')
+    style(type='text/css').
+
+      video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: contain;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+  body
+    script.
+      initCamera()
